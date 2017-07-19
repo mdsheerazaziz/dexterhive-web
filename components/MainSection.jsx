@@ -1,3 +1,5 @@
+
+// TODO : delete this file later, for reference purpose
 import React, { Component, PropTypes } from 'react';
 import TodoItem from './TodoItem';
 import Footer from './Footer';

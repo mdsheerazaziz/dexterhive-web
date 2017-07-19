@@ -1,0 +1,39 @@
+@mixin display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin display-inline-flex {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+@mixin flex($grow, $shrink, $basis) {
+  -ms-flex: $grow $shrink $basis;
+  -webkit-box-flex: $grow; // -webkit-box-flex has grow property only Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/box-flex and https://developer.mozilla.org/en/docs/Web/CSS/flex
+  flex: $grow $shrink $basis;
+}
+
+// TODO: Combine the below two mixins into single 
+@mixin flex-row {
+  -ms-flex-direction: row;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+@mixin flex-wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}

@@ -1,7 +1,7 @@
 {
   "name": "react-redux-material_ui-boilerplate",
   "version": "1.0.0",
-  "description": "A boilerplate for React + Redux + Material UI + ES6 syntax application",
+  "description": "DexterHive",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/takanabe/react-redux-material_ui-boilerplate.git"
+    "url": "https://github.com/mdsheerazaziz/dexterhive_web"
   },
   "keywords": [
     "React",
@@ -19,11 +19,6 @@
     "Bable",
     "ES6"
   ],
-  "author": "https://github.com/takanabe",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/takanabe/react-redux-material_ui-boilerplate/issues"
-  },
   "homepage": "",
   "devDependencies": {
     "babel-core": "^6.17.0",
@@ -39,7 +34,9 @@
     "eslint-loader": "^1.5.0",
     "eslint-plugin-react": "^6.3.0",
     "file-loader": "^0.9.0",
-    "style-loader": "^0.13.1",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.13.2",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.2",
     "webpack-hot-middleware": "^2.12.2"

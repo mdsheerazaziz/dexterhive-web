@@ -1,3 +1,5 @@
+
+// TODO : delete this file later, for reference purpose
 import React, { PropTypes, Component } from 'react';
 import classnames from 'classnames';
 import { SHOW_ALL, SHOW_COMPLETED, SHOW_ACTIVE } from '../constants/TodoFilters';

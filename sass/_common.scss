@@ -1,0 +1,34 @@
+@import 'mixins';
+
+.padding-0 {
+  padding: 0;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+// Added for development purposes, to be removed later
+.border-box-red {
+  border: solid 1px red;
+}
+
+.border-box-green {
+  border: solid 1px lawngreen;
+}
+
+.border-box-blue {
+  border: solid 1px dodgerblue;
+}
+
+.border-box-yellow {
+  border: solid 1px yellow;
+}
+
+.border-box-orange {
+  border: solid 1px darkorange;
+}
+
+.border-box-black {
+  border: solid 1px black;
+}
