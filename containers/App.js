@@ -22,7 +22,7 @@ class App extends Component {
         <MuiThemeProvider muiTheme={theme}>
           <div>
             <LeftMenu />
-            <Header addTodo={actions.addTodo}/>
+            <Header/>
           </div>
         </MuiThemeProvider>
       </div>

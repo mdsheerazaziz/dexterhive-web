@@ -15,7 +15,3 @@ export default class LeftMenu extends Component {
         );
     }
 }
-
-Header.propTypes = {
-// Add here
-};
