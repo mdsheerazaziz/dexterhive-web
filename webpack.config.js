@@ -19,6 +19,9 @@ module.exports = {
       { test: /\.html$/, loader: "file?name=[name].[ext]" },
       { test: /\.css$/, loader: "file?name=[name].[ext]" },
       { test: /\.jsx?$/, exclude: /node_modules/, loaders: ["react-hot","babel-loader"]},
+      { test: /\.svg$/, loader: "url-loader?limit=10000&mimetype=image/svg+xml" },
+      { test: /\.png$/, loader: "url-loader?mimetype=image/png" },
+      { test: /\.jpg$/, loader: "url-loader?mimetype=image/jpg" },
         {
             test: /\.scss$/,
             loaders: ['style', 'css', 'sass']

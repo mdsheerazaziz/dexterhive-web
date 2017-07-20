@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+
 import injectTapEventPlugin from "react-tap-event-plugin";
 import { Provider } from 'react-redux';
 
-import App from '../containers/App';
+import GroupsContainer from '../containers/GroupsContainer';
 import configureStore from '../store/configureStore';
 
 //Needed for React Developer Tools
@@ -19,7 +21,24 @@ const store = configureStore();
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <GroupsContainer />
   </Provider>,
   document.getElementById("root")
 );
+
+/*History for navigation purpose*/
+//const appHistory = useRouterHistory(createHashHistory)({ queryKey: false })
+
+// const route = (
+//     <Provider store={store}>
+//       <Router history={browserHistory}>
+//       <Route path='/' component={GroupsContainer}>
+//       <IndexRoute component={GroupsContainer} />
+//       <Route path='/groups' component={GroupsContainer}/>
+//       </Route>
+//       </Router>
+//     </Provider>
+// )
+//
+// ReactDOM.render(route, document.getElementById('app'));
+//
