@@ -13,9 +13,9 @@ require('./Header.scss');
 class Header extends Component {
     render() {
         return (
-            <header className="header">
-                <AppBar title="DexterHive" />
-            </header>
+            <div className="header">
+                this is a header
+            </div>
         );
     }
 }
