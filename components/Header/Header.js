@@ -3,18 +3,24 @@
  */
 import React, { PropTypes, Component } from 'react';
 
-// Material Components
-import AppBar from 'material-ui/AppBar';
+//Components
+import Search from '../Search/Search';
 
 // Stylesheets
 require('./Header.scss');
 
+// Images
+//TODO: This is dummy image
+const profile = require('../../assets/img/profiletemp.jpg');
 
 class Header extends Component {
     render() {
         return (
             <div className="header">
-                this is a header
+               <Search/>
+                <div className="profile-container">
+                    <img src={profile}/>
+                </div>
             </div>
         );
     }
