@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 // Components here
 import Header from '../components/Header/Header';
 import LeftMenu from '../components/LeftMenu/LeftMenu';
+import GroupCardDetail from '../components/GroupCardDetail/GroupCardDetail';
 
 import MainSection from '../components/MainSection';
 import * as TodoActions from '../actions/todos';
@@ -22,7 +23,25 @@ class App extends Component {
         <MuiThemeProvider muiTheme={theme}>
           <div>
             <LeftMenu />
-            <Header/>
+            <Header/><br/>
+            <GroupCardDetail
+                groupName="Center for Mobile Cloud Computing(C4MCCR)"
+                groupType="Private"
+                groupAvatar="http://lorempixel.com/400/200"
+                notificationCount="500"
+                memberCount="10"
+                updatedDate="21 Nov 2017"
+                lastActivity="Mohd Sheeraz Completed Task1"
+            />
+            <GroupCardDetail
+                groupName="Center for Mobile Cloud Computing(C4MCCR)"
+                groupType="Private"
+                groupAvatar="http://lorempixel.com/400/200"
+                notificationCount="50"
+                memberCount="10"
+                updatedDate="21 Nov 2017"
+                lastActivity="Mohd Sheeraz Completed Task1"
+            />
           </div>
         </MuiThemeProvider>
       </div>
