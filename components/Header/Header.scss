@@ -1,5 +1,10 @@
-.hello-form {
-  p {
-    color: blue;
-  }
+@import '../../sass/common';
+@import '../../sass/variables';
+
+.header {
+  position: fixed;
+  left: $leftpanel-width;
+  height: $logo-section-height;
+  background-color: #7f7f7f;
+  width: 100%- $leftpanel-width;
 }
