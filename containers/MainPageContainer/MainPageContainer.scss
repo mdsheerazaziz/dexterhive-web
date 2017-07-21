@@ -1,0 +1,20 @@
+@import '../../sass/common';
+@import '../../sass/variables';
+
+// TODO: css repeated, make this as common css
+.groups-container {
+  @include display-flex;
+}
+
+.leftmenu-container {
+  width: $leftpanel-width;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  z-index: 39;
+}
+
+.rightsection-container {
+  width: 100% - $leftpanel-width;
+}

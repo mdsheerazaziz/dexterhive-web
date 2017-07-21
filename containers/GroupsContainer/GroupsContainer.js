@@ -3,16 +3,16 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 // Components here
-import Header from '../components/Header/Header';
-import LeftMenu from '../components/LeftMenu/LeftMenu';
-import GroupsSection from '../components/GroupsSection/GroupsSection';
+import Header from '../../components/Header/Header';
+import LeftMenu from '../../components/LeftMenu/LeftMenu';
+import GroupsSection from '../../components/GroupsSection/GroupsSection';
 
-import * as TodoActions from '../actions/todos';
+import * as TodoActions from '../../actions/todos';
 
 // For Customization Options, edit  or use
 // './src/material_ui_raw_theme_file.jsx' as a template.
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import theme from '../src/material_ui_raw_theme_file';
+import theme from '../../src/material_ui_raw_theme_file';
 
 // Stylesheet
 require('./GroupsContainer.scss');
@@ -36,11 +36,6 @@ class GroupsContainer extends Component {
   );
   }
 }
-
-GroupsContainer.propTypes = {
-  todos: PropTypes.array.isRequired,
-  actions: PropTypes.object.isRequired
-};
 
 function mapStateToProps(state) {
   return {

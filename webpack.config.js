@@ -29,6 +29,7 @@ module.exports = {
     extensions: ['', '.js', '.jsx']
   },
   eslint: {
-    configFile: './.eslintrc'
+    configFile: './.eslintrc',
+    emitWarning: true
   },
 };
