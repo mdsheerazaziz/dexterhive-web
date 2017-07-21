@@ -9,6 +9,7 @@
   height: $logo-section-height;
   background-color: $header-background-color;
   width: 100%- $leftpanel-width;
+  z-index: 999999;
 }
 
 .profile-container img {
