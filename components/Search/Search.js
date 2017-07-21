@@ -14,7 +14,7 @@ export default class Search extends Component {
     render() {
         return (
             <div className="search-wrapper">
-                <TextField multiLine="false"
+                <TextField multiLine={false}
                     hintText="Search for authors, publications and research groups." />
             </div>
     );
