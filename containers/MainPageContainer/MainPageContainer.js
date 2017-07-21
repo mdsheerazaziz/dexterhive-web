@@ -12,6 +12,7 @@ import * as TodoActions from '../../actions/todos';
 // './src/material_ui_raw_theme_file.jsx' as a template.
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import theme from '../../src/material_ui_raw_theme_file';
+import DashboardSection from "../../components/DashboardSection/DashboardSection";
 
 // Stylesheet
 require('./MainPageContainer.scss');
@@ -27,6 +28,7 @@ class MainPageContainer extends Component {
                     </div>
                     <div className="rightsection-container">
                         <Header/>
+                        <DashboardSection/>
                     </div>
                 </div>
             </MuiThemeProvider>

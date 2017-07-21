@@ -2,7 +2,7 @@
  * Created by anshu on 20/07/17.
  */
 
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
 import GroupCardDetail from '../GroupCardDetail/GroupCardDetail';
 import MainSectionHeader from '../MainSectionHeader/MainSectionHeader';
 // Stylesheets

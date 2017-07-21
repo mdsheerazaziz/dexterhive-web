@@ -1,0 +1,14 @@
+@import '../../sass/common';
+@import '../../sass/flex';
+@import '../../sass/variables';
+
+.shared-thoughts-content{
+  padding-left: 1.3em;
+  padding-bottom: 0.8em;
+}
+.shared-thoughts-actions{
+  @include display-flex;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+  justify-content: space-between;
+}
