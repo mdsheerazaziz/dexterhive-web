@@ -1,0 +1,69 @@
+@import '../../sass/common';
+@import '../../sass/variables';
+
+
+//TODO: Repeated Css
+.profile-section-wrapper {
+  margin-left: $leftpanel-width;
+  margin-top: $logo-section-height;
+  padding: 2em;
+}
+
+.profile-header {
+  margin-bottom: 2em;
+  width: 70%;
+  height: 20%;
+  position: relative;
+  height: 12em;
+}
+
+.profile-header div:first-child {
+  height: 65%;
+}
+
+.profile-subheader {
+  position: absolute;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.54);
+  top: 6em;
+  bottom: 0;
+  color: white;
+  opacity: .8;
+  padding: 1em;
+}
+
+.profile-header-cover {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.profile-description-card {
+  width: 70%;
+  margin-bottom: 1em;
+}
+
+.profile-pic-container {
+  @include display-flex;
+  position: absolute;
+  margin: 0 auto;
+  justify-content: center;
+  top: 1em;
+  align-items: center;
+  right: 2em;
+  background-color: white;
+  height: 9em !important;
+  width: 9em;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+
+  img{
+    height: 97%;
+    width: 97%;
+    border-radius: 50%;
+    margin: 0;
+  }
+}
+
