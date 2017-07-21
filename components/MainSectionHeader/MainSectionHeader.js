@@ -2,7 +2,7 @@
  * Created by Sheeraz on 21/07/17.
  */
 import React, {Component} from 'react';
-import {Card, CardTitle} from 'material-ui/Card';
+import {Card} from 'material-ui/Card';
 import {FONT_WEIGHT_600} from '../../constants/constants';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ContentAdd from 'material-ui/svg-icons/content/add';
