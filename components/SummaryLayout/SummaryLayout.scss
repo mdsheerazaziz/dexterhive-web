@@ -1,0 +1,18 @@
+@import '../../sass/common';
+@import '../../sass/flex';
+@import '../../sass/variables';
+
+.main-section-header-card{
+  height: auto;
+  width: 30%;
+  padding: .8em 1em;
+}
+.summary-layout-header{
+  @include display-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.summary-layout-header-title{
+  font-weight: 600;
+  font-size: 1.2em;
+}
