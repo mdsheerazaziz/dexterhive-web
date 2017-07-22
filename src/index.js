@@ -30,7 +30,7 @@ const route = (
       <Router history={appHistory}>
         <Route path='/' component={MainPageContainer}/>
         <Route path='/groups' component={GroupsContainer}/>
-        <Route path='/main' component={MainPageContainer}/>
+        <Route path='/dashboard' component={MainPageContainer}/>
         <Route path='/profile' component={ProfileContainer}/>
         <Route path='*' component={PageNotFound} />
       </Router>

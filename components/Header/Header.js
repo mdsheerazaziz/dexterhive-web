@@ -2,10 +2,16 @@
  * Created by anshu on 19/07/17.
  */
 import React, { PropTypes, Component } from 'react';
+import { Link } from 'react-router';
 
 //Components
 import Search from '../Search/Search';
 import Widgets from '../Widgets/Widgets';
+import {blueGrey300, blueGrey50} from 'material-ui/styles/colors';
+
+
+import DownArrowIcon from 'material-ui/svg-icons/navigation/arrow-drop-down';
+
 
 // Stylesheets
 require('./Header.scss');
@@ -22,14 +28,15 @@ class Header extends Component {
                 <div className="header-main-content">
                     <div className="header-main-logo-wrapper">
                         <a>
-                            <img className="header-main-app-logo" src={appLogo}/>
+                            <img className="header-main-app-logo" src={appLogo} />
                         </a>
                     </div>
                     <Search/>
                     <Widgets/>
 
                         <div className="profile-container">
-                            <img src={profile}/>
+                            <Link to="/profile"><img src={profile}/></Link>
+                            <DownArrowIcon color={blueGrey300} hoverColor={blueGrey50}/>
                         </div>
                 </div>
             </nav>
