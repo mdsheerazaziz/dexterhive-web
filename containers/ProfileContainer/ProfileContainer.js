@@ -7,7 +7,6 @@ import { connect } from 'react-redux';
 
 // Components here
 import Header from '../../components/Header/Header';
-import LeftMenu from '../../components/LeftMenu/LeftMenu';
 import UpdateProfile from '../../components/UpdateProfile/UpdateProfile';
 
 import * as TodoActions from '../../actions/todos';
@@ -26,9 +25,6 @@ class MainPageContainer extends Component {
         return (
             <MuiThemeProvider muiTheme={theme}>
                 <div className="groups-container">
-                    <div className="leftmenu-container">
-                        <LeftMenu />
-                    </div>
                     <div className="rightsection-container">
                         <Header/>
                         <UpdateProfile />

@@ -2,17 +2,34 @@
 @import '../../sass/variables';
 
 .header {
-  @include display-flex;
   align-items: center;
   position: fixed;
-  left: $leftpanel-width;
   height: $logo-section-height;
   background-color: $header-background-color;
-  width: 100%- $leftpanel-width;
+  width: 100%;
   z-index: 999999;
+  padding: 0 $gutter-app-space;
+  top: 0;
+  border-top: none;
+  box-shadow: none;
 }
 
 .profile-container img {
   width: 3em;
 
+}
+
+.header-main-content {
+  @include display-flex;
+  max-width: 1128px;
+}
+
+.header-main-logo-wrapper {
+  @include flex(0, 0, auto);
+  padding-top: 9px;
+
+  img {
+    width: 2em;
+    height: 2em;
+  }
 }

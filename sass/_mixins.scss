@@ -14,6 +14,7 @@
   -ms-flex: $grow $shrink $basis;
   -webkit-box-flex: $grow; // -webkit-box-flex has grow property only Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/box-flex and https://developer.mozilla.org/en/docs/Web/CSS/flex
   flex: $grow $shrink $basis;
+  -webkit-flex: $grow $shrink $basis;
 }
 
 // TODO: Combine the below two mixins into single 
