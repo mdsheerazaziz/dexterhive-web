@@ -2,6 +2,7 @@
 @import '../../sass/variables';
 
 .group-section-wrapper {
-  margin-left: $leftpanel-width;
+  margin-left: $gutter-app-space;
+  margin-right: $gutter-app-space;
   margin-top: $logo-section-height;
 }

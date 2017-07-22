@@ -4,9 +4,10 @@
 
 //TODO: Repeated Css
 .profile-section-wrapper {
-  margin-left: $leftpanel-width;
+  margin-left: $gutter-app-space;
+  margin-right: $gutter-app-space;
   margin-top: $logo-section-height;
-  padding: 2em;
+  padding: 2em 0;
 }
 
 .profile-header {

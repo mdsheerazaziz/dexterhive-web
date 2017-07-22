@@ -2,7 +2,8 @@
  * Created by anshu on 19/07/17.
  */
 import React, {Component} from 'react';
-import TextField from 'material-ui/TextField';
+
+import SearchIcon from 'material-ui/svg-icons/action/search';
 
 // Stylesheets
 require('./Search.scss');
@@ -13,10 +14,14 @@ const appLogo = require('../../assets/img/dexterhive.png');
 export default class Search extends Component {
     render() {
         return (
-            <div className="search-wrapper">
-                <TextField multiLine={false}
-                    hintText="Search for authors, publications and research groups." />
-            </div>
+            <form className="search-wrapper">
+                <div className="search-bar">
+                    <input placeholder="Search" className="search-input"/>
+                    <span className="search-icon">
+                        <SearchIcon />
+                    </span>
+                </div>
+            </form>
     );
     }
 }

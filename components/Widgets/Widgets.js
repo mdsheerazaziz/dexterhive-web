@@ -14,47 +14,42 @@ import Drive from 'material-ui/svg-icons/action/perm-media';
 // Stylesheets
 require('./Widgets.scss');
 
-// Images
-const appLogo = require('../../assets/img/dexterhive.png');
-
 export default class Widgets extends Component {
     render() {
         return (
-            <li className="">
-                <ul>
-                    <li className="">
-                        <a>
-                            <Updates color = {blueGrey300}/>
-                            <span className="widget-name">Updates</span>
-                        </a>
-                    </li>
-                    <li className="">
-                        <a>
-                            <Profile color = {blueGrey300}/>
-                            <span className="widget-name">Profile</span>
-                        </a>
-                    </li>
-                    <li className="">
-                        <a>
-                            <Library color = {blueGrey300}/>
-                            <span className="widget-name">Library</span>
-                        </a>
-                    </li>
+            <ul className="widgets-container">
+                <li className="">
+                    <a>
+                        <Updates color = {blueGrey300}/>
+                        <span className="widget-name">Updates</span>
+                    </a>
+                </li>
+                <li className="">
+                    <a>
+                        <Profile color = {blueGrey300}/>
+                        <span className="widget-name">Profile</span>
+                    </a>
+                </li>
+                <li className="">
+                    <a>
+                        <Library color = {blueGrey300}/>
+                        <span className="widget-name">Library</span>
+                    </a>
+                </li>
 
-                    <li className="">
-                        <a>
-                            <Drive color = {blueGrey300}/>
-                            <span className="widget-name">Storage</span>
-                        </a>
-                    </li>
-                    <li className="">
-                        <a>
-                            <Groups color = {blueGrey300}/>
-                            <span className="widget-name">Groups</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
+                <li className="">
+                    <a>
+                        <Drive color = {blueGrey300}/>
+                        <span className="widget-name">Storage</span>
+                    </a>
+                </li>
+                <li className="">
+                    <a>
+                        <Groups color = {blueGrey300}/>
+                        <span className="widget-name">Groups</span>
+                    </a>
+                </li>
+            </ul>
     );
     }
 }
