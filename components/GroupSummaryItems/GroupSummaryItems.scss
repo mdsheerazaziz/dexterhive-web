@@ -1,0 +1,17 @@
+@import '../../sass/common';
+@import '../../sass/flex';
+@import '../../sass/variables';
+
+
+.member-avatar-wrapper{
+  @include display-flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .member-avatar{
+    border-radius: 50%;
+    width: 1.6em;
+    height: 1.6em;
+    padding: 0 0.1em;
+  }
+}

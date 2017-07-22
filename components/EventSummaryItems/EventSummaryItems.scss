@@ -2,7 +2,7 @@
 @import '../../sass/flex';
 @import '../../sass/variables';
 
-.share-thoughts-actions{
+.event-summary-wrapper{
   @include display-flex;
   justify-content: space-between;
 }

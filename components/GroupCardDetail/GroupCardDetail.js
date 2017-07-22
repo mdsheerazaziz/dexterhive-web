@@ -4,6 +4,7 @@
 import React, {Component} from 'react';
 import {Card, CardHeader} from 'material-ui/Card';
 import {CARD_WIDTH, MAX_NOTIFICATION_COUNT} from '../../constants/constants'
+import NotificationAvatar from "../NotificationAvatar/NotificationAvatar";
 
 require('./GroupCardDetail.scss');
 
@@ -15,16 +16,11 @@ class GroupCardDetail extends Component {
                 <div className="group-details">
                     {/*Left*/}
                     <div className="group-details-col-1">
-                        <div className="notification-count-icon">
-                            <span className="notification-count">
-                                { (this.props.notificationCount < 100) ? (this.props.notificationCount) :
-                                    MAX_NOTIFICATION_COUNT}
-                            </span>
-                        </div>
-                        <CardHeader
-                            title={this.props.groupName}
-                            subtitle={this.props.groupType}
-                            avatar={this.props.groupAvatar}
+                        <NotificationAvatar
+                            notificationCount={this.props.notificationCount}
+                            groupName={this.props.groupName}
+                            groupType={this.props.groupType}
+                            groupAvatar={this.props.groupAvatar}
                         />
                     </div>
                     {/*Right*/}
