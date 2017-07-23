@@ -36,7 +36,7 @@ class Header extends Component {
 
                         <div className="profile-container">
                             <Link to="/profile"><img src={profile}/></Link>
-                            <DownArrowIcon color={blueGrey300} hoverColor={blueGrey50}/>
+                            <DownArrowIcon className="profile-dropdown-arrow" color={blueGrey300} hoverColor={blueGrey50}/>
                         </div>
                 </div>
             </nav>

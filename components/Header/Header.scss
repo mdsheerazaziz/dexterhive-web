@@ -12,6 +12,8 @@
   top: 0;
   border-top: none;
   box-shadow: none;
+  //background: linear-gradient( to left, rgba(255,0,0,1) 0%, rgba(0,1,0,1) 12%, rgba(255,93,177,1) 47%, rgba(83,0,30,1) 100% ) left bottom #777 no-repeat;
+  background-size: 100% 5%;
 }
 
 .profile-container img {
@@ -28,10 +30,16 @@
 
 .header-main-logo-wrapper {
   @include flex(0, 0, auto);
-  padding-top: 9px;
+  padding-top: 6px;
 
   img {
-    width: 2em;
-    height: 2em;
+    width: 2.5em;
+    height: 2.5em;
+    cursor: pointer;
   }
+}
+
+.profile-dropdown-arrow {
+  margin-bottom: .3em;
+  cursor: pointer;
 }
