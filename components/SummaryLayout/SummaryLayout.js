@@ -15,7 +15,7 @@ require('./SummaryLayout.scss');
 class SummaryLayout extends Component {
     render(){
         return(
-            <Card style={CARD_WIDTH} className="main-section-header-card">
+            <Card style={CARD_WIDTH} className="main-section-summary-header-card">
                 <div className="summary-layout-header-wrapper">
                     <div className="summary-layout-header">
                         <div className="summary-layout-header-title">

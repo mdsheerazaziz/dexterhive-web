@@ -11,20 +11,33 @@ require('./MainSectionHeader.scss');
 
 
 class MainSectionHeader extends Component {
+
+    constructor(props){
+        super(props);
+    }
+
+    handleDOpen = () => {
+        this.props.openDialog();
+    };
+
     render() {
         return (
-            <Card className="main-section-header-card">
-                <div className="main-section-header-main">
-                    <div className="main-section-header-title">
-                        {this.props.title}
+            <div>
+                {this.props.children}
+                <Card className="main-section-header-card">
+                    <div className="main-section-header-main">
+                        <div className="main-section-header-title">
+                            {this.props.title}
+                        </div>
+                        <div className="main-section-header-actions">
+                            <FloatingActionButton mini={true} onTouchTap={this.handleDOpen}>
+                                <ContentAdd />
+                            </FloatingActionButton>
+                        </div>
                     </div>
-                    <div className="main-section-header-actions">
-                        <FloatingActionButton mini={true}>
-                            <ContentAdd />
-                        </FloatingActionButton>
-                    </div>
-                </div>
-            </Card>
+                </Card>
+
+            </div>
         );
     }
 }
